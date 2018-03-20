@@ -1,0 +1,4 @@
+[requires]
+OpenSSL/1.1.0g@conan/stable
+zlib/1.2.8@conan/stable
+libuv/1.15.0@bincrafters/stable
