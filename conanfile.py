@@ -3,7 +3,7 @@ from conans import ConanFile, CMake, tools
 
 class UwebsocketsConan(ConanFile):
     name = "uWebSockets"
-    version = "0.14.6"
+    version = "0.13.0"
     license = "<Put the package license here>"
     url = "<Package recipe repository url here, for issues about the package>"
     description = "<Description of Uwebsockets here>"
@@ -16,7 +16,7 @@ class UwebsocketsConan(ConanFile):
 
     def source(self):
         self.run("git clone https://github.com/uNetworking/uWebSockets")
-        self.run("cd uWebSockets && git checkout v0.14.6")
+        self.run("cd uWebSockets && git checkout v0.13.0")
         # This small hack might be useful to guarantee proper /MT /MD linkage in MSVC
         # if the packaged project doesn't have variables to set it properly
 
